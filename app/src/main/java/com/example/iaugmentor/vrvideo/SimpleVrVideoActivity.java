@@ -308,7 +308,7 @@ public class SimpleVrVideoActivity extends Activity {
       try {
          if (fileInformation == null || fileInformation.length < 1
           || fileInformation[0] == null || fileInformation[0].first == null) {
-          videoWidgetView.loadVideoFromAsset("congo.mp4");
+          videoWidgetView.loadVideo(Uri.parse("http://dwshtw0lx674k.cloudfront.net/mock_interviews/video/480_5813165763b2aba7a92.mp4"),videoOptions);
         } else {
           videoWidgetView.loadVideo(fileInformation[0].first, fileInformation[0].second);
         }
